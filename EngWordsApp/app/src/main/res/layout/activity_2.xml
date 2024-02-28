@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2"
+    android:gravity="center">
+
+    <ImageButton
+        android:id="@+id/pronunciationButton"
+        android:layout_width="79dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="620dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/music_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonExit"
+        android:layout_width="54dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="328dp"
+        android:layout_marginBottom="704dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_Word"
+        android:layout_width="389dp"
+        android:layout_height="142dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toTopOf="@id/buttonCheckMark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834" />
+
+    <ImageButton
+        android:id="@+id/buttonCross"
+        android:layout_width="140dp"
+        android:layout_height="137dp"
+        android:layout_marginBottom="204dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/no"
+        app:layout_constraintBottom_toTopOf="@id/buttonNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonCheckMark" />
+
+    <ImageButton
+        android:id="@+id/buttonCheckMark"
+        android:layout_width="159dp"
+        android:layout_height="137dp"
+        android:layout_marginBottom="200dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/yes"
+        app:layout_constraintBottom_toTopOf="@id/buttonNext"
+        app:layout_constraintEnd_toStartOf="@id/buttonCross"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTranslation"
+        android:layout_width="387dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="TextView"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonCheckMark" />
+
+    <ImageButton
+        android:id="@+id/buttonNext"
+        android:layout_width="335dp"
+        android:layout_height="103dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/musicButton"
+        android:layout_width="33dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="696dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/music_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
